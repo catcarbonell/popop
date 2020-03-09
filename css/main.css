@@ -1,0 +1,13 @@
+/* POPOP MODALS INDEX STYLE */
+
+#index-section{
+    z-index: 0;
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100vh;
+    /* border: 1px solid crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
