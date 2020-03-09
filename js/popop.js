@@ -1,25 +1,37 @@
+/* ======= ======= ======= ======= ======= */
 /* POPOP.JS - FUNCTIONALITY FOR YOUR MODAL */
-const modalBtn = document.querySelector('.popop-btn')
+/* ======= ======= ======= ======= ======= */
+
+/* - DOCUMENT ELEMENTS - */
+// Main Modal //
 const modal = document.querySelector('.popop-modal');
-const modalBgLite = document.querySelector('.popop-bg-lite')
-const closeBtn = document.querySelector('.close-btn');
+// Button Calls //
+const btn = document.querySelectorAll('.button');
+const openBtn = document.querySelectorAll('.popop-btn');
+const closeBtn = document.querySelectorAll('.close-btn');
 
-function popop(el){
-    modalBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        el.classList.add('popop-bg-lite');
-        modalBgLite.style.display = 'initial';
-        el.style.display = 'flex';
+/* ======= ======= ======= ======= ======= */
+
+/* - FUNCTIONS - */
+// Open Modal //
+function openModal(){
+    openBtn.forEach( trigger => { 
+        trigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+            e.stopImmediatePropagation();
+            }
+        )
     });
 };
-
-function closeModal(el){
-    closeBtn.addEventListener('click', function (e) {
-        el.style.display = 'none';
-        modalBgLite.style.display = 'none';
-        el.classList.remove('popop-bg-lite');
+// Close Modal //
+function closeModal(){
+    closeBtn.forEach( trigger => {
+        trigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            modal.style.display = 'none';
+           e.stopImmediatePropagation();
+        })
     });
 };
-
-popop(modal);
-closeModal(modal);
+// Get ID //
