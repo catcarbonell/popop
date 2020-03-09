@@ -2,6 +2,7 @@
 /* ======= ======  MAIN.CSS  ===== ======= */ 
 /* ======= ======= ======= ======= ======= */
 
+/* ===  GLOBAL === */
 body {
     background-color: #d0e8e3;
     font-family: 'Roboto', sans-serif;
@@ -20,6 +21,8 @@ img {
     border-radius: 15px;
     border: 2px solid rgb(54,54,54);
 }
+
+/* ===  BUTTONS === */
 
 .button {
     margin-top: 10px;
@@ -54,7 +57,7 @@ img {
 }
 footer {
     margin-top: 10px;
-    width: 15%;
+    width: 25%;
 }
 footer img {
     border: none;
@@ -72,7 +75,6 @@ footer span {
     text-transform: lowercase;
     letter-spacing: 1px;
 }
-
 #docs-btn {
     color: rgba(54,54,54, 0.5);
     border: 2px solid rgba(54,54,54, 0.5);

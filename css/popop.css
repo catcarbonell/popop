@@ -2,6 +2,7 @@
 /* == POPOP.CSS - STYLES FOR YOUR MODAL == */
 /* ======= ======= ======= ======= ======= */
 
+/* === MODAL === */
 .popop-modal {
     display: none;
     flex-direction: column;
