@@ -21,6 +21,13 @@ img {
     border-radius: 15px;
     border: 2px solid rgb(54,54,54);
 }
+code {
+    color: #C084DB;
+}
+code:hover {
+    color: #fff;
+    background-color: #C084DB;
+}
 
 /* ===  BUTTONS === */
 
@@ -36,6 +43,8 @@ img {
     border: 2px solid rgba(54,54,54, 0.5);
     color:rgba(54,54,54, 0.5);
 }
+
+/* ===  SECTIONS === */
 
 #index-section {
     z-index: 0;
@@ -72,9 +81,9 @@ footer span {
     text-transform: lowercase;
     letter-spacing: 1px;
 }
-/* #docs-btn {
+.inactive-btn {
     color: rgba(54,54,54, 0.5);
     border: 2px solid rgba(54,54,54, 0.5);
     cursor: none;
     box-shadow: none;
-} */
+} 

@@ -2,35 +2,55 @@
 /* POPOP.JS - FUNCTIONALITY FOR YOUR MODAL */
 /* ======= ======= ======= ======= ======= */
 
-/* - DOCUMENT ELEMENTS - */
-// Main Modal //
-const modal = document.querySelector('.popop-modal');
-// Button Calls //
+///* - DOCUMENT ELEMENTS - *///
+// - Main Modal - //
+const modalContent = document.querySelector('.popop-content')
+// - Button Calls - //
 const btn = document.querySelectorAll('.button');
-const openBtn = document.querySelectorAll('.popop-btn');
-const closeBtn = document.querySelectorAll('.close-btn');
+const openBtn = document.querySelectorAll('.popop-open-btn');
+const closeBtn = document.querySelectorAll('.popop-close-btn');
 
 /* ======= ======= ======= ======= ======= */
+let openModalArr = [];
+///* - FUNCTIONS - *///
 
-/* - FUNCTIONS - */
-// Open Modal //
-function openModal(el){
-    openBtn.forEach( trigger => { 
-        trigger.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById(`${el.id}`).style.display = "flex";
-            e.stopImmediatePropagation();
-            }
-        )
-    });
+//* - Visibility - *//
+//* - Active Modal - *//
+function openModal(modalId){
+    const modal = document.getElementById(`${modalId}`);
+    modal.classList.add('popop-show');
+    openModalArr.push(modal);
 };
-// Close Modal //
-function closeModal(el){
-    closeBtn.forEach( trigger => {
-        trigger.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById(`${el.id}`).style.display = "none";
-            e.stopImmediatePropagation();
-        })
+function closeModal (){
+    if(!openModalArr.length){
+        return;
+    }
+    const modal = openModalArr[openModalArr.length-1];
+    modal.classList.remove('popop-show');
+    openModalArr.pop();
+}
+
+//* - EVENT LISTENERS - *//
+//* - Open Modal - *//
+function openModalEvent(){
+  openBtn.forEach( trigger => { 
+    trigger.addEventListener('click', function (e) {
+        const targetModal = e.target;
+        const modalId = targetModal.getAttribute('data-modal-id')
+        openModal(modalId);
     });
+  });
 };
+//* - Close Modal - *//
+function closeModalEvent(){
+  closeBtn.forEach( trigger => {
+    trigger.addEventListener('click', function (e) {
+        e.stopImmediatePropagation();
+        closeModal();
+    });
+  });
+};
+
+//** - INIT POPOP.JS! - **//
+openModalEvent();
+closeModalEvent();

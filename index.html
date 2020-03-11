@@ -15,7 +15,8 @@
     <script defer src="js/popop.js"></script>
 </head>
 <body>
-    <!-- MODALS -->
+    <!-- MODALS GO HERE -->
+    <!-- MODAL - INTRO -->
     <div class="popop-modal" id="intro">
         <div class="popop-content">
             <h3 class="title is-3">Intro</h2>
@@ -29,44 +30,38 @@
             </p>
             <h3 class="title is-3">Get Started</h2>
             <p>Copy+Paste this code block to get started:</p>
-            <p class="code">
+            <div>
                 <code>
-                    <'div class="popop-modal">
-                        <'div class="popop-content">
-                        <'/div>
-                    <'/div>
+                    <'div class="popop-modal"> <br />
+                    &nbsp;&nbsp;&nbsp;<'div class="popop-content"> <br />
+                    &nbsp;&nbsp;&nbsp;<'/div> <br />
+                    <'/div> <br />
                 </code>
-            </p>
+            </div>
             <p>(Remember to take out the [ ' ] in the tags!)</p>
             <hr>
-            <button class="close-btn button" onclick="closeModal(intro)">Close this modal!</button>
+            <button class="popop-close-btn button">Close this modal!</button>
         </div>
     </div>
-
+    <!-- MODAL - DOCUMENTATION -->
     <div class="popop-modal" id="docs">
         <div class="popop-content">
             <h2 class="title is-2">Heck.</h2>
-            <button class="close-btn button" onclick="closeModal(docs)">Close this modal!</button>
+            <button class="popop-close-btn button">Close this modal!</button>
         </div>
     </div>
-
     <!-- LANDING -->
     <section class="container" id="index-section">
         <div class="title-section">
             <h1 class="title is-1">Popop!</h1>
             <p class="subtitle">A very simple, customizable, vanilla JS + flexbox modal</p>
-            <button class="button popop-btn" onclick ="openModal(intro)" id="intro-btn">Do the thing!</button>
-            <button class="button popop-btn"  onclick ="openModal(docs)" id="docs-btn">Documentation!</button>
+            <button class="button popop-open-btn" data-modal-id="intro">Do the thing!</button>
+            <button class="button popop-open-btn" data-modal-id="docs">Documentation!</button>
         </div>
         <footer>
             <span><a href="http://github.com/catcarbonell/popop" target="_blank"> View Git Repo</a>	• </span>
             <span> Made by <a href="http://twitter.com/catcarbn" target="_blank">Cat</a> &hearts;</span>
-            
         </footer>
     </section>
-    <!-- DOCUMENTATION -->
-   
-
-    
 </body>
 </html>

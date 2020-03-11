@@ -4,10 +4,9 @@
 
 /* === MODAL === */
 .popop-modal {
-    display: none;
+    visibility: hidden;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    opacity: 0;
     z-index: 999;
     width: 50%;
     height: 75%;
@@ -22,11 +21,11 @@
     left: 0; 
     bottom: 0; 
     right: 0;
+    transition: 0.2s ease-in-out all;
 }
 
-.show{
-    display: flex;
-}
-.hide {
-    display: none;
+/* === VISIBILITY === */
+.popop-show{
+   visibility: visible;
+   opacity: 1;
 }
