@@ -23,7 +23,15 @@
     right: 0;
     transition: 0.2s ease-in-out all;
 }
-
+.popop-content{
+    overflow: auto;
+    height: 90%;
+    padding: 10px
+}
+.popop-fixed {
+    position: fixed;
+    height: 50px;
+}
 /* === VISIBILITY === */
 .popop-show{
    visibility: visible;

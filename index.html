@@ -21,33 +21,82 @@
         <div class="popop-content">
             <h3 class="title is-3">Intro</h2>
             <p class="content">
-                POPOP is a bare-bones modal framework, meaning that in order for this modal to adopt your style, 
+                <span class="popop-label">POPOP</span> is a bare-bones modal framework, meaning that in order for this modal to adopt your style, 
                 the css file (popop.css) needs to be positioned just before your own custom CSS (ex. main.css or styles.css link tags). 
                 It will adopt any stylings you have implemented on your site!
             </p>
-            <p class="content">
-                POPOP plays well with Bulma and the Animation.css library!
-            </p>
-            <h3 class="title is-3">Get Started</h2>
+            <h3 class="title is-3">Get Started</h3>
             <p>Copy+Paste this code block to get started:</p>
             <div>
                 <code>
-                    <'div class="popop-modal"> <br />
-                    &nbsp;&nbsp;&nbsp;<'div class="popop-content"> <br />
-                    &nbsp;&nbsp;&nbsp;<'/div> <br />
-                    <'/div> <br />
+                    < div class="popop-modal"> {CONTENT GOES HERE}< /div > 
                 </code>
             </div>
-            <p>(Remember to take out the [ ' ] in the tags!)</p>
-            <hr>
+            <hr />
+            <h3 class="title is-3">NPM/Yarn</h3>
+            <p>Coming soon!</p>
+            <hr />
+            <h3 class="title is-3">About</h2>
+            <p><span class="popop-label">POPOP</span> was made with vanilla JS!</p>
+            <p>This site, however, is made with the assistance of <a class="bulma-style" href="http://bulma.io" target="_blank">Bulma</a>!</p>
+        </div>
+        <div class="popop-fixed">
             <button class="popop-close-btn button">Close this modal!</button>
+            <button class="popop-open-btn button" data-modal-id="docs">Go to Documentation!</button>
         </div>
     </div>
     <!-- MODAL - DOCUMENTATION -->
     <div class="popop-modal" id="docs">
         <div class="popop-content">
-            <h2 class="title is-2">Heck.</h2>
-            <button class="popop-close-btn button">Close this modal!</button>
+            <h2 class="title is-2">Documentation</h2>
+            <p class="subtitle">How to use <span class="popop-label">POPOP!</span></p>
+            <section class="section">
+                <h3 class="title is-3">Important!</h3>
+                <p>
+                    Your modal needs to be, at the very least,
+                    a <code>div</code> with a class of <code>popop-modal</code> AND 
+                    it will need a unique <code>id</code>.
+                </p>
+                <p>
+                    Your element used for closing the modal
+                    (ex. a <code>button</code>,
+                     <code>a</code> tag, 
+                     <code>span</code>, etc.) needs this data tag attached as well:
+                     <code>data-modal-id</code>. This id needs to match the id of your target modal!
+                </p>
+            </section>
+            <section class="section">
+                <h3 class="title is-3">Key Classes</h3>
+                <p>POPOP is a class-based system. Your HTML tags may get ridiculous, but it'll be worth it!</p>
+                <p>Check out this table:</p>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Class</th>
+                            <th>Purpose</th>
+                        </tr>
+                        <tr>
+                            <td class="code-cell"><code>.popop-modal</code></td>
+                            <td>The main wrapper for your modal. If you don't apply this class to your modal, POPOP will not work!!</td>
+                        </tr>
+                        <tr>
+                            <td class="code-cell"><code>.popop-show</code></td>
+                            <td>
+                                This helps toggle the visibility of your modal via JS!
+                                You can apply this to a particular modal if you want to keep it active while customizing it!
+                                Just remember to remove it before you ship!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="code-cell"><code>.popop-content</code></td>
+                            <td>For the body of your modal. It'll make it scrollable!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div class="popop-fixed">
+            <button class="popop-close-btn button is-pulled-right">Close this modal!</button>
         </div>
     </div>
     <!-- LANDING -->

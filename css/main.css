@@ -3,6 +3,7 @@
 /* ======= ======= ======= ======= ======= */
 
 /* ===  GLOBAL === */
+
 body {
     background-color: #d0e8e3;
     font-family: 'Roboto', sans-serif;
@@ -22,11 +23,12 @@ img {
     border: 2px solid rgb(54,54,54);
 }
 code {
-    color: #C084DB;
+    color: #e557cf;
+    background: #efefef;
 }
-code:hover {
-    color: #fff;
-    background-color: #C084DB;
+/* === TABLE STYLE === */
+td.code-cell {
+    width: 25%;
 }
 
 /* ===  BUTTONS === */
@@ -43,6 +45,13 @@ code:hover {
     border: 2px solid rgba(54,54,54, 0.5);
     color:rgba(54,54,54, 0.5);
 }
+
+.inactive-btn {
+    color: rgba(54,54,54, 0.5);
+    border: 2px solid rgba(54,54,54, 0.5);
+    cursor: none;
+    box-shadow: none;
+} 
 
 /* ===  SECTIONS === */
 
@@ -64,6 +73,9 @@ code:hover {
     border: 2px solid rgba(54,54,54, 0.7);
     flex-flow: column;
 }
+
+/* ===  FOOTER === */
+
 footer {
     margin-top: 10px;
     width: 35%;
@@ -81,9 +93,15 @@ footer span {
     text-transform: lowercase;
     letter-spacing: 1px;
 }
-.inactive-btn {
-    color: rgba(54,54,54, 0.5);
-    border: 2px solid rgba(54,54,54, 0.5);
-    cursor: none;
-    box-shadow: none;
-} 
+
+/* ===  BONUS CRAP === */
+span.popop-label {
+    font-family: 'Fredoka One', cursive;
+}
+.bulma-style:link, .bulma-style:visited {
+    color:#00d1b2;
+}
+.bulma-style:hover{
+    color: #fff;
+    background-color: #00d1b2;
+}
