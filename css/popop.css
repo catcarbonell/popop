@@ -23,3 +23,10 @@
     bottom: 0; 
     right: 0;
 }
+
+.show{
+    display: flex;
+}
+.hide {
+    display: none;
+}

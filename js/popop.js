@@ -14,24 +14,23 @@ const closeBtn = document.querySelectorAll('.close-btn');
 
 /* - FUNCTIONS - */
 // Open Modal //
-function openModal(){
+function openModal(el){
     openBtn.forEach( trigger => { 
         trigger.addEventListener('click', function (e) {
             e.preventDefault();
-            modal.style.display = 'flex';
+            document.getElementById(`${el.id}`).style.display = "flex";
             e.stopImmediatePropagation();
             }
         )
     });
 };
 // Close Modal //
-function closeModal(){
+function closeModal(el){
     closeBtn.forEach( trigger => {
         trigger.addEventListener('click', function (e) {
             e.preventDefault();
-            modal.style.display = 'none';
-           e.stopImmediatePropagation();
+            document.getElementById(`${el.id}`).style.display = "none";
+            e.stopImmediatePropagation();
         })
     });
 };
-// Get ID //

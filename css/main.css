@@ -57,10 +57,7 @@ img {
 }
 footer {
     margin-top: 10px;
-    width: 25%;
-}
-footer img {
-    border: none;
+    width: 35%;
 }
 footer a:link, a:visited {
     text-decoration: none;
@@ -75,9 +72,9 @@ footer span {
     text-transform: lowercase;
     letter-spacing: 1px;
 }
-#docs-btn {
+/* #docs-btn {
     color: rgba(54,54,54, 0.5);
     border: 2px solid rgba(54,54,54, 0.5);
     cursor: none;
     box-shadow: none;
-}
+} */

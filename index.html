@@ -16,22 +16,47 @@
 </head>
 <body>
     <!-- MODALS -->
-    <div class="popop-modal" id="modal-1">
+    <div class="popop-modal" id="intro">
         <div class="popop-content">
-            <h2 class="title is-2">Instructions:</h2>
-            <p>Drop in anything here!</p>
-            <p>Even images!</p>
-            <img src="https://media2.giphy.com/media/kNSeTs31XBZ3G/giphy.gif?cid=2319e9d1a82e318e38df003611c6a6285b9025cda771edb2&rid=giphy.gif" alt="an animated gif!" />
-            <button class="close-btn button" onclick="closeModal()">Close this modal!</button>
+            <h3 class="title is-3">Intro</h2>
+            <p class="content">
+                POPOP is a bare-bones modal framework, meaning that in order for this modal to adopt your style, 
+                the css file (popop.css) needs to be positioned just before your own custom CSS (ex. main.css or styles.css link tags). 
+                It will adopt any stylings you have implemented on your site!
+            </p>
+            <p class="content">
+                POPOP plays well with Bulma and the Animation.css library!
+            </p>
+            <h3 class="title is-3">Get Started</h2>
+            <p>Copy+Paste this code block to get started:</p>
+            <p class="code">
+                <code>
+                    <'div class="popop-modal">
+                        <'div class="popop-content">
+                        <'/div>
+                    <'/div>
+                </code>
+            </p>
+            <p>(Remember to take out the [ ' ] in the tags!)</p>
+            <hr>
+            <button class="close-btn button" onclick="closeModal(intro)">Close this modal!</button>
         </div>
     </div>
+
+    <div class="popop-modal" id="docs">
+        <div class="popop-content">
+            <h2 class="title is-2">Heck.</h2>
+            <button class="close-btn button" onclick="closeModal(docs)">Close this modal!</button>
+        </div>
+    </div>
+
     <!-- LANDING -->
     <section class="container" id="index-section">
         <div class="title-section">
             <h1 class="title is-1">Popop!</h1>
             <p class="subtitle">A very simple, customizable, vanilla JS + flexbox modal</p>
-            <button class="button popop-btn" onclick ="openModal()">Do the thing!</button>
-            <button class="button" id="docs-btn">Documentation!</button>
+            <button class="button popop-btn" onclick ="openModal(intro)" id="intro-btn">Do the thing!</button>
+            <button class="button popop-btn"  onclick ="openModal(docs)" id="docs-btn">Documentation!</button>
         </div>
         <footer>
             <span><a href="http://github.com/catcarbonell/popop" target="_blank"> View Git Repo</a>	• </span>
