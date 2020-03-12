@@ -62,14 +62,18 @@
                     (ex. <code>button</code>,
                      <code>a</code>, 
                      <code>span</code>, etc.) needs this data tag attached as well:
-                     <code>data-modal-id</code>. This id needs to match the id of your target modal!
+                     <code>data-modal-id</code>. This id needs to match the id of your target modal!<br>
+                     <p>example:</p>
+                     <code>
+                         < a href="#" class="button" <span class="code-highlight"> data-modal-id="modal-1"</span>>Activate!< /a >
+                     </code>
                 </p>
             </section>
             <section class="section">
                 <h3 class="title is-3">Key Classes</h3>
                 <p>POPOP is a class-based system. Your HTML tags may get ridiculous, but it'll be worth it!</p>
                 <p>Check out this table:</p>
-                <table class="table">
+                <table class="table is-hoverable">
                     <tbody>
                         <tr>
                             <th>Class</th>
@@ -90,7 +94,7 @@
                         <tr>
                             <td class="code-cell"><code>.popop-content</code></td>
                             <td>
-                                For the body of your modal. It'll make it scrollable!
+                                For the body/content of your modal. It'll make it scrollable!``
                             </td>
                         </tr>
                     </tbody>

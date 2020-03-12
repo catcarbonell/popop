@@ -26,7 +26,12 @@ code {
     color: #e557cf;
     background: #efefef;
 }
+.code-highlight{
+    background-color:#e557cf;
+    color: #fff;
+}
 /* === TABLE STYLE === */
+
 td.code-cell {
     width: 25%;
 }
