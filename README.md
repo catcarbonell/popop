@@ -7,8 +7,8 @@
 ---
 ## Getting Started
 Download or copy-pasta the code from the "downloads" folder in the repo!
-
 CDN link and npm/yarn init coming soon!
+
 ---
 ## Setup
 1. Insert the <link> tag for popop.css BEFORE  your own custom css (main.css, style.css, etc.)
