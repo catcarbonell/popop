@@ -102,8 +102,10 @@ footer span {
 /* ===  BONUS CRAP === */
 span.popop-label {
     font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
 }
 .bulma-style:link, .bulma-style:visited {
+    font-family: 'Fredoka One', cursive;
     color:#00d1b2;
 }
 .bulma-style:hover{

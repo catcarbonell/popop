@@ -38,7 +38,7 @@
             <hr />
             <h3 class="title is-3">About</h2>
             <p><span class="popop-label">POPOP</span> was made with vanilla JS!</p>
-            <p>This site, however, is made with the assistance of <a class="bulma-style" href="http://bulma.io" target="_blank">Bulma</a>!</p>
+            <p>This site, however, is made with the assistance of <a class="bulma-style" href="http://bulma.io" text="opens a new tab!" target="_blank">Bulma</a>!</p>
         </div>
         <div class="popop-fixed">
             <button class="popop-close-btn button">Close this modal!</button>
@@ -65,13 +65,14 @@
                      <code>data-modal-id</code>. This id needs to match the id of your target modal!<br>
                      <p>example:</p>
                      <code>
+                         < div class="popop-modal" <span class="code-highlight"> id="modal-1"</span>>A Modal! < /div> <br />
                          < a href="#" class="button" <span class="code-highlight"> data-modal-id="modal-1"</span>>Activate!< /a >
                      </code>
                 </p>
             </section>
             <section class="section">
                 <h3 class="title is-3">Key Classes</h3>
-                <p>POPOP is a class-based system. Your HTML tags may get ridiculous, but it'll be worth it!</p>
+                <p><span class="popop-label">Popop</span> is a class-based framework. Your HTML tags may get ridiculous, but it'll be worth it!</p>
                 <p>Check out this table:</p>
                 <table class="table is-hoverable">
                     <tbody>
@@ -88,13 +89,19 @@
                             <td>
                                 This helps toggle the visibility of your modal via JS!
                                 You can apply this to a particular modal if you want to keep it active while customizing it!
-                                Just remember to remove it before you ship!
+                                Just remember to remove it before you ship.
                             </td>
                         </tr>
                         <tr>
                             <td class="code-cell"><code>.popop-content</code></td>
                             <td>
-                                For the body/content of your modal. It'll make it scrollable!``
+                                For the body/content of your modal. It'll make it scrollable!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="code-cell"><code>.popop-fixed</code></td>
+                            <td>
+                                Makes the element sticky. Use this for navs, menus, and for elements to close the modal!
                             </td>
                         </tr>
                     </tbody>
@@ -110,8 +117,9 @@
         <div class="title-section">
             <h1 class="title is-1">Popop!</h1>
             <p class="subtitle">A very simple, customizable, vanilla JS + flexbox modal</p>
-            <button class="button popop-open-btn" data-modal-id="intro">Do the thing!</button>
+            <button class="button popop-open-btn" data-modal-id="intro">Get Started!</button>
             <button class="button popop-open-btn" data-modal-id="docs">Documentation!</button>
+            <button class="button"><a href="http://github.com/catcarbonell/popop" target="_blank">View on GitHub!</a></button>
         </div>
         <footer>
             <span><a href="http://github.com/catcarbonell/popop" target="_blank"> View Git Repo</a>	• </span>

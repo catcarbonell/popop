@@ -14,8 +14,8 @@ const closeBtn = document.querySelectorAll('.popop-close-btn');
 let openModalArr = [];
 ///* - FUNCTIONS - *///
 
-//* - Visibility - *//
-//* - Active Modal - *//
+//* - VISIBILITY - *//
+//* - Open Modal - *//
 function openModal(modalId){
     const modal = document.getElementById(`${modalId}`);
     modal.classList.add('popop-show');
