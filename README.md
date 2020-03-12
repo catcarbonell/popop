@@ -2,21 +2,21 @@
 ### Modals for everyone! **ᕕ( ᐛ )ᕗ**
 ---
 ## Intro
-      *POPOP* is a vanilla JS, flexbox-based, bare-bones modal framework, boasting the use of only 2 files, 3 required css classes, and less than 80 lines of JS! (Including the comments!)
+ *POPOP* is a vanilla JS, flexbox-based, bare-bones modal framework, boasting the use of only 2 files, 3 required css classes, and less than 80 lines of JS! (Including the comments!)
 ---
 ## Getting Started
-    Download or copy-pasta the code from the "downloads" folder in the repo!
+Download or copy-pasta the code from the "downloads" folder in the repo!
 
-    CDN link and npm/yarn init coming soon!
+CDN link and npm/yarn init coming soon!
 ---
 ## Setup
-    1. Insert the <link> tag for popop.css BEFORE  your own custom css (main.css, style.css, etc.)
+1. Insert the <link> tag for popop.css BEFORE  your own custom css (main.css, style.css, etc.)
 
-    2. Insert the <script> tag for  popop.js either AFTER all of your CSS 
-    (with "defer"-- ex: <script defer src="popop.js"></script>)
-    OR at the bottom of the HTML file, after the <body> tag!
+2. Insert the <script> tag for  popop.js either AFTER all of your CSS 
+(with "defer"-- ex: <script defer src="popop.js"></script>)
+OR at the bottom of the HTML file, after the <body> tag!
 
-    3. To set up a modal and functionality:
+3. To set up a modal and functionality:
 * Apply the "popop-modal" class to a div and give it a unique ID.
 * Apply the "popop-open-btn" class to a button, span, or a element.
 * Add "data-modal-id" name that matches the modal's ID * **VERY IMPORTANT**
