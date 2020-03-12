@@ -47,7 +47,7 @@ code {
 /* === TABLE STYLE === */
 
 td.code-cell {
-    width: 25%;
+    width: 30%;
 }
 
 /* ===  BUTTONS === */
@@ -107,7 +107,7 @@ footer a:link, a:visited {
 }
 footer a:hover {
     color: #fff;
-    background-color: #bbd0cc;
+    background-color: #1b9fba;
 }
 footer span {
     font-size: 11px;
