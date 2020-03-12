@@ -2,7 +2,8 @@
 ### Modals for everyone! **ᕕ( ᐛ )ᕗ**
 ---
 ## Intro
- *POPOP* is a vanilla JS, flexbox-based, bare-bones modal framework, boasting the use of only 2 files, 3 required css classes, and less than 80 lines of JS! (Including the comments!)
+
+### POPOP is a vanilla JS, flexbox-based, bare-bones modal framework, boasting the use of only 2 files, 3 required css classes, and less than 80 lines of JS! (Including the comments!)
 ---
 ## Getting Started
 Download or copy-pasta the code from the "downloads" folder in the repo!
