@@ -1,4 +1,4 @@
-# POPOP JS
+# [POPOP JS](http://catcarbonell.github.io/popop)
 ### Modals for everyone! **ᕕ( ᐛ )ᕗ**
 ---
 ## Intro
@@ -53,4 +53,4 @@ Feel free to fork the repo and add your own twist!
 
 Honestly, feel free to edit anything in the code. I'm not the boss of you. This is built to be flexible/customizable lol.
 
-Contact me via DMs on twitter or LinkedIn!
+Contact me via DMs on [twitter](http://twitter.com/catcarbn) or [LinkedIn](http://linkedin.com/in/catcarbonell)!
