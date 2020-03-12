@@ -47,6 +47,7 @@ OR at the bottom of the HTML file, after the <body> tag!
 ## Upcoming Features:
 * A library of pre-made modals for you to copy-pasta!
 * Dark mode!
+* Built-in animation!
 ---
 ## Comments? Concerns?
 Feel free to fork the repo and add your own twist!

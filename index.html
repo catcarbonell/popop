@@ -89,10 +89,14 @@
                         <tr>
                             <th>Class</th>
                             <th>Purpose</th>
+                            <th>Required</th>
                         </tr>
                         <tr>
                             <td class="code-cell"><code>.popop-modal</code></td>
-                            <td>The main wrapper for your modal. If you don't apply this class to your modal, POPOP will not work!!</td>
+                            <td>
+                                The main wrapper for your modal. If you don't apply this class to your modal, POPOP will not work!!
+                            </td>
+                            <td>Yes</td>
                         </tr>
                         <tr>
                             <td class="code-cell">
@@ -101,6 +105,7 @@
                             <td>
                                 Apply this to the element that will OPEN your modal. Don't forget to apply <code>data-modal-id</code>!
                             </td>
+                            <td>Yes</td>
                         </tr>
                         <tr>
                             <td class="code-cell">
@@ -109,6 +114,7 @@
                             <td>
                                 Apply this to the element that will CLOSE your modal. Place this within the div with the class <code>popop-modal</code>!
                             </td>
+                            <td>Yes</td>
                         </tr>
                         <tr>
                             <td class="code-cell">
@@ -117,20 +123,14 @@
                             <td>
                                 For the body/content of your modal. It'll make it scrollable!
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="code-cell"><code>.popop-show</code></td>
-                            <td>
-                                This helps toggle the visibility of your modal via JS!
-                                You can apply this to a particular modal if you want to keep it active while customizing it!
-                                Just remember to remove it before you ship.
-                            </td>
+                            <td>No</td>
                         </tr>
                         <tr>
                             <td class="code-cell"><code>.popop-fixed</code></td>
                             <td>
                                 Makes the element sticky. Use this for navs, menus, and for elements to close the modal!
                             </td>
+                            <td>No</td>
                         </tr>
                     </tbody>
                 </table>
