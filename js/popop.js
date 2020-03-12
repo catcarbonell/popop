@@ -3,14 +3,15 @@
 /* ======= ======= ======= ======= ======= */
 
 ///* - DOCUMENT ELEMENTS - *///
-// - Main Modal - //
+//* - Main Modal - *//
 const modalContent = document.querySelector('.popop-content')
-// - Button Calls - //
+//* - Button Calls - *//
 const btn = document.querySelectorAll('.button');
 const openBtn = document.querySelectorAll('.popop-open-btn');
 const closeBtn = document.querySelectorAll('.popop-close-btn');
 
 /* ======= ======= ======= ======= ======= */
+
 let openModalArr = [];
 ///* - FUNCTIONS - *///
 
@@ -29,7 +30,6 @@ function closeModal (){
     modal.classList.remove('popop-show');
     openModalArr.pop();
 }
-
 //* - EVENT LISTENERS - *//
 //* - Open Modal - *//
 function openModalEvent(){

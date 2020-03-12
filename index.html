@@ -21,24 +21,33 @@
         <div class="popop-content">
             <h3 class="title is-3">Intro</h2>
             <p class="content">
-                <span class="popop-label">POPOP</span> is a bare-bones modal framework, meaning that in order for this modal to adopt your style, 
+                <span class="popop-label">POPOP</span> is a Vanilla JS, bare-bones modal framework, meaning that in order for this modal to adopt your style, 
                 the css file (popop.css) needs to be positioned just before your own custom CSS (ex. main.css or styles.css link tags). 
                 It will adopt any stylings you have implemented on your site!
             </p>
-            <h3 class="title is-3">Get Started</h3>
-            <p>Copy+Paste this code block to get started:</p>
-            <div>
-                <code>
-                    < div class="popop-modal"> {CONTENT GOES HERE}< /div > 
-                </code>
-            </div>
             <hr />
-            <h3 class="title is-3">NPM/Yarn</h3>
-            <p>Coming soon!</p>
+            <h3 class="title is-3">Get Started!</h3>
+            <section class="section">
+                <h4 class="title is-4">npm/yarn</h4>
+                <p class="subtitle">Coming soon!</p>
+            </section>
+            <section class="section">
+                <h3 class="title is-4">Copy pasta</h3>
+                <code>
+                    < div class="popop-modal" id="modal"> <br />
+                    &nbsp;&nbsp;&nbsp;{CONTENT!}<br />
+                    &nbsp;&nbsp;&nbsp;< button class="popop-close-btn">Close Modal!< /button><br />
+                    < /div > <br />
+                    < button class="popop-open-btn" data-modal-id="modal">Open Modal! < /button >
+                </code>
+            </section>
             <hr />
             <h3 class="title is-3">About</h2>
-            <p><span class="popop-label">POPOP</span> was made with vanilla JS!</p>
-            <p>This site, however, is made with the assistance of <a class="bulma-style" href="http://bulma.io" text="opens a new tab!" target="_blank">Bulma</a>!</p>
+            <p class="content">
+                <p><span class="popop-label">POPOP</span> was inspired by my classmates and their need for a simple modal to apply to their projects! (Hi <a href="http://generalassemb.ly" target="new">GA</a> SEI 08!)</p>
+                <p>This site, however, is made with the assistance of <a class="bulma-style" href="http://bulma.io" text="opens a new tab!" target="_blank">Bulma</a>!</p>
+                <p>Check it out on <a class="popop-label" href="http://github.com/catcarbonell/popop" target="_blank">GitHub</a>!</p>
+            </p>
         </div>
         <div class="popop-fixed">
             <button class="popop-close-btn button">Close this modal!</button>
@@ -58,7 +67,7 @@
                     it will need a unique <code>id</code>.
                 </p>
                 <p>
-                    Your element used for closing the modal
+                    Your element used for opening the modal
                     (ex. <code>button</code>,
                      <code>a</code>, 
                      <code>span</code>, etc.) needs this data tag attached as well:
@@ -122,8 +131,7 @@
             <button class="button"><a href="http://github.com/catcarbonell/popop" target="_blank">View on GitHub!</a></button>
         </div>
         <footer>
-            <span><a href="http://github.com/catcarbonell/popop" target="_blank"> View Git Repo</a>	• </span>
-            <span> Made by <a href="http://twitter.com/catcarbn" target="_blank">Cat</a> &hearts;</span>
+            <span> Made by <a href="http://twitter.com/catcarbn" target="_blank">Cat Carbonell</a> &hearts;</span>
         </footer>
     </section>
 </body>
