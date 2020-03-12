@@ -34,13 +34,13 @@ img {
     border: 2px solid rgb(54,54,54);
 }
 code {
-    color: #e557cf;
+    color: #1b9fba;
     background-color: #fff;
     font-size: 12px;
 }
 .code-highlight{
     color: #fff;
-    background-color:#e557cf;
+    background-color: #1b9fba;
     font-size: 12px;
 }
 
