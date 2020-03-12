@@ -21,7 +21,7 @@
         <div class="popop-content">
             <h3 class="title is-3">Intro</h2>
             <p class="content">
-                <span class="popop-label">POPOP</span> is a Vanilla JS, bare-bones modal framework, boasting the use of only two files, 4 classes, and less than 80 lines of JS! (Including the comments!)
+                <span class="popop-label">POPOP</span> is a Vanilla JS, bare-bones modal framework, boasting the use of only two files, 3 required classes, and less than 80 lines of JS! (Including the comments!)
             </p>
             <hr />
             <h3 class="title is-3">Get Started!</h3>
@@ -56,16 +56,6 @@
             <h2 class="title is-2">Documentation</h2>
             <p class="subtitle">How to use <span class="popop-label">POPOP!</span></p>
             <section class="section">
-                <h3 class="title is-4">Quick Start Copy Pasta</h3>
-                <code>
-                    < div class="popop-modal" id="modal"> <br />
-                    &nbsp;&nbsp;&nbsp;{CONTENT!}<br />
-                    &nbsp;&nbsp;&nbsp;< button class="popop-close-btn">Close Modal!< /button><br />
-                    < /div > <br />
-                    < button class="popop-open-btn" data-modal-id="modal">Open Modal! < /button >
-                </code>
-            </section>
-            <section class="section">
                 <h3 class="title is-3">Important!</h3>
                 <p>
                     Your modal needs to be, at the very least,
@@ -80,8 +70,8 @@
                      <code>data-modal-id</code>. This id needs to match the id of your target modal!<br>
                      <p>example:</p>
                      <code>
-                         < div class="popop-modal" <span class="code-highlight"> id="modal-1"</span>>A Modal! < /div> <br />
-                         < a href="#" class="button" <span class="code-highlight"> data-modal-id="modal-1"</span>>Activate!< /a >
+                    <&nbsp;div class="popop-modal" <span class="code-highlight"> id="modal-1"</span>>A Modal! < /div> <br />
+                    <&nbsp;a href="#" class="button" <span class="code-highlight"> data-modal-id="modal-1"</span>>Activate!< /a >
                      </code>
                 </p>
             </section>
@@ -100,17 +90,35 @@
                             <td>The main wrapper for your modal. If you don't apply this class to your modal, POPOP will not work!!</td>
                         </tr>
                         <tr>
+                            <td class="code-cell">
+                                <code>.popop-open-btn</code>
+                            </td>
+                            <td>
+                                Apply this to the element that will OPEN your modal. Don't forget to apply <code>data-modal-id</code>!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="code-cell">
+                                <code>.popop-close-btn</code>
+                            </td>
+                            <td>
+                                Apply this to the element that will CLOSE your modal. Place this within the div with the class <code>popop-modal</code>!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="code-cell">
+                                <code>.popop-content</code>
+                            </td>
+                            <td>
+                                For the body/content of your modal. It'll make it scrollable!
+                            </td>
+                        </tr>
+                        <tr>
                             <td class="code-cell"><code>.popop-show</code></td>
                             <td>
                                 This helps toggle the visibility of your modal via JS!
                                 You can apply this to a particular modal if you want to keep it active while customizing it!
                                 Just remember to remove it before you ship.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="code-cell"><code>.popop-content</code></td>
-                            <td>
-                                For the body/content of your modal. It'll make it scrollable!
                             </td>
                         </tr>
                         <tr>

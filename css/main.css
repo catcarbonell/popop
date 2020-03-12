@@ -24,11 +24,9 @@ a:hover {
     color: rgba(54,54,54, 0.7);
     transition: ease 0.2s;
 }
-
 p {
     margin-bottom: 5px;
 }
-
 img {
     border-radius: 15px;
     border: 2px solid rgb(54,54,54);
