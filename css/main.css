@@ -97,8 +97,7 @@ td.code-cell {
 
 footer {
     margin-top: 10px;
-    width: 20%;
-    flex-flow: row nowrap;
+    text-align: center;
 }
 footer a:link, a:visited {
     text-decoration: none;
@@ -126,4 +125,21 @@ footer span {
 .bulma-style:hover{
     color: #fff;
     background-color: #00d1b2;
+}
+
+/* === MEDIA QUERIES === */
+@media only screen and (max-width: 950px) {
+    body{
+        font-size: 12px;
+    }
+    .title.is-1 {
+        font-size: 3em;
+    }
+    .subtitle {
+        font-size: 1.2em;
+    }
+    .button {
+        font-size: 1em;
+        padding: 3px 5px 10px 5px ;
+    }
 }
