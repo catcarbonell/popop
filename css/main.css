@@ -132,11 +132,14 @@ footer span {
     body{
         font-size: 12px;
     }
-    .title.is-1 {
+    .title.is-1{
         font-size: 3em;
     }
+    .title.is-2, .title.is-3, .title.is-4, .title.is-5{
+        font-size: 2.5em;
+    }
     .subtitle {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .button {
         font-size: 1em;

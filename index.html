@@ -1,152 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POPOP - A Simple Modal for You!</title>
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:200|Fredoka+One&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/bulma.css">
-    <link rel="stylesheet" href="css/popop.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- JS -->
-    <script defer src="js/popop.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POPOP - A Simple Modal for You!</title>
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:200|Fredoka+One&display=swap" rel="stylesheet">
+<!-- CSS -->
+<link rel="stylesheet" href="css/bulma.css">
+<link rel="stylesheet" href="css/popop.css">
+<link rel="stylesheet" href="css/main.css">
+<!-- JS -->
+<script defer src="js/popop.js"></script>
 </head>
 <body>
-    <!-- MODAL - INTRO -->
-    <div class="popop-modal" id="intro">
-        <div class="popop-content">
-            <h3 class="title is-3">Intro</h2>
-            <p class="content">
-                <span class="popop-label">POPOP</span> is a Vanilla JS, bare-bones modal framework, boasting the use of only two files, 3 required classes, and less than 80 lines of JS! (Including the comments!)
-            </p>
-            <hr />
-            <h3 class="title is-3">Get Started!</h3>
-            <section class="section">
-                <h4 class="title is-4">Download</h4>
-                <ul>
-                    <li>• <a href="https://raw.githubusercontent.com/catcarbonell/popop/master/downloads/popop.css" target="_blank" class="popop-label">POPOP.CSS</a></li>
-                    <li>• <a href="https://raw.githubusercontent.com/catcarbonell/popop/master/downloads/popop.js" target="blank" class="popop-label">POPOP.JS</a></li>
-                </ul>
-                <p>Click through! It'll open a new tab for the raw code!</p>
-                <p>Or just right-click, 'Save Link As'</p>
-            </section>
-            <section class="section">
-                <h4 class="title is-4">npm/yarn</h4>
-                <p class="subtitle">Coming soon!</p>
-            </section>
-            <hr />
-            <h3 class="title is-3">About</h2>
-            <p class="content">
-                <p><span class="popop-label">POPOP</span> was inspired by my classmates and their need for a simple modal to apply to their projects! (Hi <span class="popop-label"><a href="http://generalassemb.ly" target="new">GA</a> SEI 08 &hearts;!</span>)</p>
-                <p>This site, however, is made with the assistance of <a class="bulma-style" href="http://bulma.io" text="opens a new tab!" target="_blank">Bulma</a>!</p>
-                <p>Check it out on <a class="popop-label" href="http://github.com/catcarbonell/popop" target="_blank">GitHub</a>!</p>
-            </p>
-        </div>
-        <div class="popop-fixed">
-            <button class="popop-close-btn button">Close this modal!</button>
-            <button class="popop-open-btn button" data-modal-id="docs">Go to Documentation!</button>
-        </div>
+<!-- MODAL - INTRO -->
+  <div class="popop-modal" id="intro">
+    <div class="popop-content">
+      <h3 class="title is-3">Intro</h2>
+      <p class="content">
+        <span class="popop-label">POPOP</span> is a Vanilla JS, bare-bones modal framework, boasting the use of only two files, 3 required classes, and less than 80 lines of JS! (Including the comments!)
+      </p>
+      <hr />
+      <h3 class="title is-3">Get Started!</h3>
+      <section class="section">
+        <h4 class="title is-4">Download</h4>
+        <ul>
+          <li>• <a href="https://raw.githubusercontent.com/catcarbonell/popop/master/downloads/popop.css" target="_blank" class="popop-label">POPOP.CSS</a></li>
+          <li>• <a href="https://raw.githubusercontent.com/catcarbonell/popop/master/downloads/popop.js" target="blank" class="popop-label">POPOP.JS</a></li>
+        </ul>
+        <p>Click through! It'll open a new tab for the raw code!</p>
+        <p>Or just right-click, 'Save Link As'</p>
+      </section>
+      <section class="section">
+        <h4 class="title is-4">npm/yarn</h4>
+        <p class="subtitle">Coming soon!</p>
+      </section>
+      <hr />
+      <h3 class="title is-3">About</h2>
+      <p class="content">
+        <p><span class="popop-label">POPOP</span> was inspired by my classmates and their need for a simple modal to apply to their projects! (Hi <span class="popop-label"><a href="http://generalassemb.ly" target="new">GA</a> SEI 08 &hearts;!</span>)</p>
+        <p>This site, however, is made with the assistance of <a class="bulma-style" href="http://bulma.io" text="opens a new tab!" target="_blank">Bulma</a>!</p>
+        <p>Check it out on <a class="popop-label" href="http://github.com/catcarbonell/popop" target="_blank">GitHub</a>!</p>
+      </p>
     </div>
-    <!-- MODAL - DOCUMENTATION -->
-    <div class="popop-modal" id="docs">
-        <div class="popop-content">
-            <h2 class="title is-2">Documentation</h2>
-            <p class="subtitle">How to use <span class="popop-label">POPOP!</span></p>
-            <section class="section">
-                <h3 class="title is-3">Important!</h3>
-                <p>
-                    Your modal needs to be, at the very least,
-                    a <code>div</code> with a class of <code>popop-modal</code> AND 
-                    it will need a unique <code>id</code>.
-                </p>
-                <p>
-                    Your element used for opening the modal
-                    (ex. <code>button</code>,
-                     <code>a</code>, 
-                     <code>span</code>, etc.) needs this data tag attached as well:
-                     <code>data-modal-id</code>. This id needs to match the id of your target modal!<br>
-                     <p>example:</p>
-                     <code>
-                    <&nbsp;div class="popop-modal" <span class="code-highlight"> id="modal-1"</span>>A Modal! < /div> <br />
-                    <&nbsp;a href="#" class="button" <span class="code-highlight"> data-modal-id="modal-1"</span>>Activate!< /a >
-                     </code>
-                </p>
-            </section>
-            <section class="section">
-                <h3 class="title is-3">Key Classes</h3>
-                <p><span class="popop-label">Popop</span> is a class-based framework. Your HTML tags may get ridiculous, but it'll be worth it!</p>
-                <p>Check out this table:</p>
-                <table class="table is-hoverable">
-                    <tbody>
-                        <tr>
-                            <th>Class</th>
-                            <th>Purpose</th>
-                            <th>Required</th>
-                        </tr>
-                        <tr>
-                            <td class="code-cell"><code>.popop-modal</code></td>
-                            <td>
-                                The main wrapper for your modal. If you don't apply this class to your modal, POPOP will not work!!
-                            </td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td class="code-cell">
-                                <code>.popop-open-btn</code>
-                            </td>
-                            <td>
-                                Apply this to the element that will OPEN your modal. Don't forget to apply <code>data-modal-id</code>!
-                            </td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td class="code-cell">
-                                <code>.popop-close-btn</code>
-                            </td>
-                            <td>
-                                Apply this to the element that will CLOSE your modal. Place this within the div with the class <code>popop-modal</code>!
-                            </td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td class="code-cell">
-                                <code>.popop-content</code>
-                            </td>
-                            <td>
-                                For the body/content of your modal. It'll make it scrollable!
-                            </td>
-                            <td>No</td>
-                        </tr>
-                        <tr>
-                            <td class="code-cell"><code>.popop-fixed</code></td>
-                            <td>
-                                Makes the element sticky. Use this for navs, menus, and for elements to close the modal!
-                            </td>
-                            <td>No</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </div>
-        <div class="popop-fixed">
-            <button class="popop-close-btn button is-pulled-right">Close this modal!</button>
-        </div>
+    <div class="popop-fixed">
+        <button class="popop-close-btn button">Close this modal!</button>
+        <button class="popop-open-btn button" data-modal-id="docs">Go to Documentation!</button>
     </div>
-    <!-- LANDING -->
-    <section class="container" id="index-section">
-        <div class="title-section">
-            <h1 class="title is-1">Popop!</h1>
-            <p class="subtitle">A very simple, customizable, vanilla JS + flexbox modal</p>
-            <button class="button popop-open-btn" data-modal-id="intro">Get Started!</button>
-            <button class="button popop-open-btn" data-modal-id="docs">Documentation!</button>
-            <button class="button"><a href="http://github.com/catcarbonell/popop" target="_blank">View on GitHub!</a></button>
-        </div>
-        <footer>
-            <span> Made by <a href="http://twitter.com/catcarbn" target="_blank">@catcarbn</a> &hearts;</span>
-        </footer>
-    </section>
-</body>
+  </div>
+  <!-- MODAL - DOCUMENTATION -->
+  <div class="popop-modal" id="docs">
+    <div class="popop-content">
+      <h2 class="title is-2">Documentation</h2>
+      <p class="subtitle">How to use <span class="popop-label">POPOP!</span></p>
+      <section class="section">
+        <h3 class="title is-3">Important!</h3>
+        <p>
+          Your modal needs to be, at the very least,
+          a <code>div</code> with a class of <code>popop-modal</code> AND 
+          it will need a unique <code>id</code>.
+        </p>
+        <p>
+          Your element used for opening the modal
+          (ex. <code>button</code>,
+          <code>a</code>, 
+          <code>span</code>, etc.) needs this data tag attached as well:
+          <code>data-modal-id</code>. This id needs to match the id of your target modal!<br>
+          <p>example:</p>
+            <code>
+          <&nbsp;div class="popop-modal" <span class="code-highlight"> id="modal-1"</span>>A Modal! < /div> <br />
+          <&nbsp;a href="#" class="button" <span class="code-highlight"> data-modal-id="modal-1"</span>>Activate!< /a >
+            </code>
+        </p>
+      </section>
+      <section class="section">
+        <h3 class="title is-3">Key Classes</h3>
+        <p><span class="popop-label">Popop</span> is a class-based framework. Your HTML tags may get ridiculous, but it'll be worth it!</p>
+        <p>Check out this table:</p>
+        <table class="table is-hoverable">
+          <tbody>
+            <tr>
+              <th>Class</th>
+                <th>Purpose</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+              <td class="code-cell"><code>.popop-modal</code></td>
+              <td>
+                The main wrapper for your modal. If you don't apply this class to your modal, POPOP will not work!!
+              </td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="code-cell">
+                  <code>.popop-open-btn</code>
+              </td>
+                <td>
+                  Apply this to the element that will OPEN your modal. Don't forget to apply <code>data-modal-id</code>!
+                </td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="code-cell">
+                <code>.popop-close-btn</code>
+              </td>
+              <td>
+                Apply this to the element that will CLOSE your modal. Place this within the div with the class <code>popop-modal</code>!
+              </td>
+              <td>Yes</td>
+          </tr>
+          <tr>
+            <td class="code-cell">
+              <code>.popop-content</code>
+            </td>
+            <td>
+              For the body/content of your modal. It'll make it scrollable!
+            </td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td class="code-cell"><code>.popop-fixed</code></td>
+            <td>
+              Makes the element sticky. Use this for navs, menus, and for elements to close the modal!
+            </td>
+            <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <div class="popop-fixed">
+        <button class="popop-close-btn button is-pulled-right">Close this modal!</button>
+    </div>
+  </div>
+  <!-- LANDING -->
+  <section class="container" id="index-section">
+    <div class="title-section">
+      <h1 class="title is-1">Popop!</h1>
+      <p class="subtitle">A very simple, customizable, vanilla JS + flexbox modal</p>
+      <button class="button popop-open-btn" data-modal-id="intro">Get Started!</button>
+      <button class="button popop-open-btn" data-modal-id="docs">Documentation!</button>
+      <button class="button"><a href="http://github.com/catcarbonell/popop" target="_blank">View on GitHub!</a></button>
+    </div>
+    <footer>
+      <span> Made by <a href="http://twitter.com/catcarbn" target="_blank">@catcarbn</a> &hearts;</span>
+    </footer>
+  </section>
+  </body>
 </html>

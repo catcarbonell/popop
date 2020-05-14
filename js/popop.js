@@ -13,12 +13,19 @@ const closeBtn = document.querySelectorAll('.popop-close-btn');
 /* ======= ======= ======= ======= ======= */
 
 let openModalArr = [];
+let savedTrigger = document.activeElement;;
 ///* - FUNCTIONS - *///
 
 //* - VISIBILITY - *//
 //* - Open Modal - *//
 function openModal(modalId){
     const modal = document.getElementById(`${modalId}`);
+    const focusableChild = modal.querySelector('a, button, input, select, textarea, [contenteditable]');
+        if (focusableChild) {
+        focusableChild.focus();
+        } else {
+          console.warn('Warning! Your modal is not accessible. We need an element to receive focus after the modal opens.')
+        }
     modal.classList.add('popop-show');
     openModalArr.push(modal);
 };
@@ -29,6 +36,7 @@ function closeModal (){
     const modal = openModalArr[openModalArr.length-1];
     modal.classList.remove('popop-show');
     openModalArr.pop();
+    savedTrigger.focus();
 }
 //* - EVENT LISTENERS - *//
 //* - Open Modal - *//
