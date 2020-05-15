@@ -9,7 +9,7 @@ const modalContent = document.querySelector('.popop-content')
 const btn = document.querySelectorAll('.button');
 const openBtn = document.querySelectorAll('.popop-open-btn');
 const closeBtn = document.querySelectorAll('.popop-close-btn');
-
+const closeOne = document.querySelector('.popop-close-btn');
 /* ======= ======= ======= ======= ======= */
 
 let openModalArr = [];
