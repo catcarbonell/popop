@@ -49,13 +49,11 @@ function openModalEvent(){
     });
   });
 };
+
 //* - Close Modal - *//
 function closeModalEvent(){
   closeBtn.forEach( trigger => {
-    trigger.addEventListener('click', function (e) {
-        e.stopImmediatePropagation();
-        closeModal();
-    });
+    trigger.addEventListener('click', closeModal)
   });
 };
 
