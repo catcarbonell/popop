@@ -72,6 +72,23 @@ td.code-cell {
     box-shadow: none;
 } 
 
+.close-btn-container {
+    width: 48%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.close-btn {
+    border: 0;
+    box-shadow: none;
+    align-self: flex-end;
+}
+.close-btn:hover {
+    border: 0;
+    box-shadow: none;
+    align-self: flex-end;
+}
+
 /* ===  SECTIONS === */
 
 #index-section {
@@ -144,5 +161,12 @@ footer span {
     .button {
         font-size: 1em;
         padding: 3px 5px 10px 5px ;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .button {
+        margin: 0;
+        padding: 0;
     }
 }

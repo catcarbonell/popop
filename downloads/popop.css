@@ -3,18 +3,6 @@
 /* ======= ======= ======= ======= ======= */
 
 /* === MODAL === */
-.popop-bg {
-    width: 100px;
-    border: 1px solid red;
-    z-index: 999;
-    background-color: rgba(54,54,54, 0.5);
-    position: absolute;
-    margin: auto;
-    top: 0; 
-    left: 0; 
-    bottom: 0; 
-    right: 0;
-}
 .popop-modal {
     visibility: hidden;
     flex-direction: column;
@@ -22,7 +10,7 @@
     z-index: 3;
     width: 50%;
     height: 75%;
-    padding: 20px;
+    padding: 10px 20px;
     border: 1px solid #333;
     border-radius: 10px;
     background-color: #fff;
@@ -38,15 +26,22 @@
 .popop-content{
     overflow: auto;
     height: 90%;
-    padding: 10px
+    padding: 10px;
 }
 .popop-fixed {
     position: fixed;
     height: 30px;
-    padding-top: 10px;
+    padding: 10px;
 }
 /* === VISIBILITY === */
-.popop-show{
+.popop-show {
    visibility: visible;
    opacity: 1;
+}
+
+@media only screen and (max-height: 450px) {
+    .popop-fixed {
+        padding-bottom: 50px;
+        height: 300px;
+    }
 }

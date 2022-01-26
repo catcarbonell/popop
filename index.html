@@ -16,6 +16,9 @@
 <body>
 <!-- MODAL - INTRO -->
   <div class="popop-modal" onkeypress="closeModalKeypress()" tabindex="0" id="intro">
+    <div class="popop-fixed close-btn-container">
+      <button class="popop-close-btn button close-btn">Close</button>
+    </div>
     <div class="popop-content">
       <h3 class="title is-3">Intro</h2>
       <p class="content">
@@ -44,12 +47,13 @@
         <p>Check it out on <a class="popop-label" href="http://github.com/catcarbonell/popop" target="_blank">GitHub</a>!</p>
       </p>
     </div>
-    <div class="popop-fixed">
-        <button class="popop-close-btn button">Close this modal!</button>
-    </div>
+
   </div>
   <!-- MODAL - DOCUMENTATION -->
   <div class="popop-modal" id="docs">
+    <div class="popop-fixed close-btn-container">
+      <button class="popop-close-btn button close-btn">Close</button>
+    </div>
     <div class="popop-content">
       <h2 class="title is-2">Documentation</h2>
       <p class="subtitle">How to use <span class="popop-label">POPOP!</span></p>
@@ -128,9 +132,6 @@
           </tbody>
         </table>
       </section>
-    </div>
-    <div class="popop-fixed">
-        <button class="popop-close-btn button is-pulled-right">Close this modal!</button>
     </div>
   </div>
   <!-- LANDING -->
