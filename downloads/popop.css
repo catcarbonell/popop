@@ -3,11 +3,23 @@
 /* ======= ======= ======= ======= ======= */
 
 /* === MODAL === */
+.popop-bg {
+    width: 100px;
+    border: 1px solid red;
+    z-index: 999;
+    background-color: rgba(54,54,54, 0.5);
+    position: absolute;
+    margin: auto;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
 .popop-modal {
     visibility: hidden;
     flex-direction: column;
     opacity: 0;
-    z-index: 999;
+    z-index: 3;
     width: 50%;
     height: 75%;
     padding: 20px;

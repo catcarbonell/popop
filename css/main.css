@@ -21,7 +21,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: rgba(54,54,54, 0.7);
+    color: #1b9fba;
     transition: ease 0.2s;
 }
 p {
@@ -60,8 +60,8 @@ td.code-cell {
     transition: ease 0.3s;
 }
 .button:hover {
-    border: 2px solid rgba(54,54,54, 0.5);
-    color:rgba(54,54,54, 0.5);
+    border: 2px solid #1b9fba;
+    color: #1b9fba;
     transition: ease 0.3s;
 }
 
